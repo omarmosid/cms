@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import type { Route } from "./+types/posts";
 
 export function meta({}: Route.MetaArgs) {
@@ -12,6 +13,7 @@ export default function Posts() {
     <div>
       <h1>Posts</h1>
       <p>This is the posts page.</p>
+      <Button>Something</Button>
     </div>
   );
 }
