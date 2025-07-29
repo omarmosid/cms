@@ -5,10 +5,24 @@ import { Outlet } from "react-router";
 
 const WebsiteLayout = () => {
   return (
-    <main className="prose container p-4">
-      nav goes here
-      <Outlet />
-    </main>
+    <>
+      <nav className="container p-4">
+        <ul className="m-0 p-0 flex gap-2 list-none">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/posts">Posts</a>
+          </li>
+          <li>
+            <a href="/adobe">Adobe</a>
+          </li>
+        </ul>
+      </nav>
+      <main className="prose container p-4">
+        <Outlet />
+      </main>
+    </>
   );
 };
 
